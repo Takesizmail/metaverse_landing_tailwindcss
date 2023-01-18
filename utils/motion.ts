@@ -21,8 +21,8 @@ export const navVariants = {
 
 export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
+    x: direction === 'left' ? '-130%' : direction === 'right' ? '130%' : 0,
+    y: direction === 'up' ? '130%' : direction === 'down' ? '130%' : 0,
   },
   show: {
     x: 0,
@@ -108,7 +108,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
 
 export const planetVariants = (direction) => ({
   hidden: {
-    x: direction === 'left' ? '-100%' : '100%',
+    x: direction === 'left' ? '-130%' : '130%',
     rotate: 120,
   },
   show: {
