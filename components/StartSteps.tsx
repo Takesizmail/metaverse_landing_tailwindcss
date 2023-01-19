@@ -1,20 +1,20 @@
-import styles from '../styles';
-import { FC } from 'react';
+import styles from '../styles'
+import { FC } from 'react'
 
 interface IStartSteps {
   number: number
   text: string
 }
 
-const StartSteps: FC<IStartSteps> = ({ number, text}) => (
+const StartSteps: FC<IStartSteps> = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row mb-[10px] items-center`}>
     <div className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323f5d]`}>
-      <p className="font-bold text-[20px] text-white">0{number}</p>
+      <p className='font-bold text-[20px] text-white'>0{number}</p>
     </div>
-    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0b0b0] leading-[32px]">
+    <p className='flex-1 ml-[30px] font-normal text-[18px] text-[#B0b0b0] leading-[32px]'>
       {text}
     </p>
   </div>
-);
+)
 
-export default StartSteps;
+export default StartSteps

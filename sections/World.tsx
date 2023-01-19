@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { fadeIn, planetVariants, staggerContainer } from '../utils/motion';
-import { StartSteps, TitleText, TypingText } from '../components';
-import { newFeatures } from '../constants';
-import NewFeatures from '../components/NewFeatures';
+import { fadeIn, staggerContainer } from '../utils/motion';
+import { TitleText, TypingText } from '../components';
+
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -22,7 +22,7 @@ const World = () => (
         title={() => (<>Track friends around you and invite them to play together in the same world</>)}
         textStyles="text-center"
       />
-      <motion.dev
+      <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relative mt-[68px] flex w-full h-[550px]"
       >
@@ -53,7 +53,7 @@ const World = () => (
           />
         </div>
 
-      </motion.dev>
+      </motion.div>
     </motion.div>
     World section
   </section>
